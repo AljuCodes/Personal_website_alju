@@ -11,7 +11,7 @@
 
 /* background settings for section */
 #section-hero {background:url(../images/background/1.jpg) fixed;}
-#section-hero-2 {background:url(../images/background/5.jpg) fixed;}
+#section-hero-2 {background:url(../images/background/5.webp) fixed;}
 #section-hero-3 {background:url(../images/background/6.jpg) fixed;}
 #section-hero-4 {background:url(../images/background/7.jpg) fixed;}
 #section-hero-5 {background:url(../images/background/8.jpg) fixed;}
@@ -20,8 +20,8 @@
 #section-services {background:url(../images/background/2.jpg) fixed;}
 #section-experiences {background:url(../images/background/3.jpg) fixed;}
 #section-contact {background:url(../images/background/4.jpg) fixed;}
-#section-services.index-2 {background:url(../images/background/5a.jpg) fixed;}
-#section-experiences.index-2 {background:url(../images/background/5b.jpg) fixed;}
+#section-services.index-2 {background:url(../images/background/5a.webp) fixed;}
+#section-experiences.index-2 {background:url(../images/background/5b.webp) fixed;}
 #section-services.index-4 {background:url(../images/background/6a.jpg) fixed;}
 #section-experiences.index-4 {background:url(../images/background/6b.jpg) fixed;}
 #section-testimonial.index-4 {background:url(../images/background/6c.jpg) fixed;}
