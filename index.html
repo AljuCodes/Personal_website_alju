@@ -12,6 +12,7 @@
     <meta name="description" content="Profession is Personal Portfolio Template">
     <meta name="keywords"
         content="business, clean, contact form, corporate, cv, light, minimalist, modern, personal, personal profile, portfolio, resume, vcard, virtual card">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="author" content="">
    
 </head>
@@ -560,36 +561,6 @@
                             <h5><span class="id-color">Have Question?</span></h5>
                             <h2>Contact Me Now</h2>
                         </div>
-
-                        <div class="col-md-6">
-                                <form name="contactForm" id='contact_form' class="s3" method="post" action='https://www.designesia.com/themes/profession/email.php'>
-                                   
-                                        <div class="field-set">
-                                            <input type='text' name='name' id='name' class="form-control" placeholder="Your Name">
-                                        </div>
-
-                                        <div class="field-set">
-                                            <input type='text' name='email' id='email' class="form-control" placeholder="Your Email">
-                                        </div>
-
-                                        <div class="field-set">
-                                            <input type='text' name='phone' id='phone' class="form-control" placeholder="Your Phone">
-                                        </div>
-										
-                                        <div class="field-set">
-                                            <textarea name='message' id='message' class="form-control" placeholder="Your Message"></textarea>
-                                        </div>
-											
-										<div class="spacer-half"></div>
-										
-                                        <div id='submit'>
-                                            <input type='submit' id='send_message' value='Submit Form' class="btn btn-custom color-2">
-                                        </div>
-                                        <div id='mail_success' class='success'>Your message has been sent successfully.</div>
-                                        <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
-                                   
-                                </form>
-                            </div>
 						
                             <div class="col-md-6">
                                 <address>
@@ -605,6 +576,8 @@
                 </div>
             </section>
 
+
+      
 
             <!-- ameen section -->
             <section id="contact">
@@ -645,14 +618,7 @@
                   </form>
                 </div>
               </section>
-            <!-- map -->
-            <!-- section begin -->
-            <section id="section-map" class="map-container no-top no-bottom" aria-label="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.1238047549402!2d76.33618632071506!3d10.009914101108897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080cf248d91115%3A0xbb89ce2570903b1f!2sAB%20Gents%20Hostel!5e0!3m2!1sen!2sin!4v1640758888763!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-            <!-- section close -->
+
 
 
         </div>
@@ -756,9 +722,28 @@
 
     <!-- color scheme -->
     <link rel="stylesheet" href="css/colors/scheme-5.css" type="text/css">
+
+<!-- ================================================ -->
+<script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxDj9vPB0i2QBy3KzVEjo6kAui7MVdpKQrrl8nV6_kZOHTDciwAhVXqGDIQcDjHYnCL/exec",
+            data:$("#submit-form").serialize(),
+            method:"POST",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </body>
 
-
-<!-- Mirrored from www.designesia.com/themes/profession/index-2-particle.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Dec 2021 04:42:29 GMT -->
 
 </html>
